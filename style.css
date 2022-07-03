@@ -90,4 +90,33 @@ margin-top: 390px;
 margin-left: 85px;
 }
 
+#get-started {
+position: absolute;
+width: 191px;
+height: 53px;
+margin-top: 601px;
+margin-left: 85px;
+background: #212529;
+border-radius: 8px;
+cursor: pointer;
+border: none;
+}
 
+
+#button-content {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+text-transform: capitalize;
+color: #FFFFFF;
+margin-left: 24px;
+text-align: center;
+display: flex;
+align-items: center;
+}
+
+#arrow {
+    margin-left: 12px;
+}
