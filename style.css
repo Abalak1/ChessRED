@@ -1,0 +1,93 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+header {
+width: 923px;
+height: 84px;
+position: absolute;
+background-color: #7025FB;
+left: 0px;
+top: 0px;
+
+}
+
+.left {
+width: 923px;
+height: 1196px;
+position: absolute;
+top: 84px;
+}
+
+.right {
+position: absolute;
+width: 997px;
+height: 1280px;
+background-color: #FD5334;
+left: 923px;
+}
+
+#king-logo {
+margin-top: 30.41px;
+margin-left: 60px;
+margin-right: 8.27px;
+position: absolute;
+}
+
+#header-text {
+position: absolute;
+width: 252.82px;
+height: 23.35px;
+margin-top: 31px;
+margin-left: 82.93px;
+
+}
+
+#chess-says{
+position: absolute;   
+width: 496px;
+height: 109px;
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 800;
+font-size: 80px;
+line-height: 109px;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-top: 265px;
+margin-left: 85px;
+
+}
+
+#a-lot-about{
+position: absolute;
+width: 136px;
+height: 27px;
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+text-transform: uppercase;
+color: #212529;
+margin-top: 306px;
+margin-left: 607px;
+}
+
+#who-we-are{
+position: absolute;
+width: 570px;
+height: 109px;
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 900;
+font-size: 80px;
+line-height: 109px;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-top: 390px;
+margin-left: 85px;
+}
+
+
