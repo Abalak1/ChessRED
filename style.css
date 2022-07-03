@@ -15,7 +15,7 @@ top: 0px;
 
 .left {
 width: 923px;
-height: 1196px;
+height: 996px;
 position: absolute;
 top: 84px;
 }
@@ -23,7 +23,7 @@ top: 84px;
 .right {
 position: absolute;
 width: 997px;
-height: 1280px;
+height: 1080px;
 background-color: #FD5334;
 left: 923px;
 }
@@ -98,8 +98,12 @@ margin-top: 601px;
 margin-left: 85px;
 background: #212529;
 border-radius: 8px;
+border: 4px solid transparent ;
+}
+
+#get-started:hover {
 cursor: pointer;
-border: none;
+border: 4px solid rgba(194, 165, 249, 0.8)
 }
 
 
