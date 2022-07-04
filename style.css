@@ -509,3 +509,23 @@ box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
 border-radius: 4px;
 }
 
+
+
+
+
+
+/* last page */
+
+#rocket-picture{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 16px;
+position: absolute;
+width: 402px;
+height: 260.65px;
+left: 278px;
+top: 416px;
+
+}
