@@ -21,10 +21,6 @@
     <div class="right-page-two">
       <h3 id="registration-header">Start creating your account</h3>
       <div id="line"></div>
-      <section id="progress-tracker"></section>
-      <p id="personal-info-progress">Personal information</p>
-      <p id="chess-experience-progress">Chess experience</p>
-      <h3 id="field-description">This is basic informaton fields</h3>
       <div id="one">
         <p id="inside-one">1</p>
       </div>
@@ -32,7 +28,47 @@
       <div id="two">
         <p id="inside-two">2</p>
       </div>
-      <section id="next-back"></section>
+      <p id="personal-info-progress">Personal information</p>
+      <p id="chess-experience-progress">Chess experience</p>
+      <h1 id="personal-info">Personal information</h1>
+      <h3 id="field-description">This is basic informaton fields</h3>
+      <inputgroup id="input-form-personal-info">
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Name *"
+          required
+        />
+        <input
+          id="email"
+          type="text"
+          name="email"
+          placeholder="Email address *"
+          required
+        />
+        <input
+          id="phone"
+          type="text"
+          name="phone"
+          placeholder="Phone number *"
+          required
+        />
+        <input
+          id="date"
+          type="text"
+          name="date"
+          placeholder="Date of birth *"
+          required
+        />
+      </inputgroup>
+      <button class="back">back</button>
+      <button class="next">
+        <div id="button-content">
+          next
+          <img id="arrow" src="/Pictures//arrow-right-circle.svg" alt="" />
+        </div>
+      </button>
     </div>
   </body>
 </html>

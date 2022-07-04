@@ -204,6 +204,20 @@ font-size: 32px;
 line-height: 150%;
 color: #000000;
 }
+#field-description{
+position: absolute;
+width: 205px;
+height: 21px;
+left: 48px;
+top: 375px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 150%;
+text-transform: capitalize;
+color: #95939A;
+}
 
 /* progress and page indecators code */
 
@@ -312,4 +326,87 @@ font-weight: 400;
 font-size: 16px;
 line-height: 150%;
 color: #000000;
+}
+
+
+/* input group */
+
+#input-form-personal-info{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+position: absolute;
+width: 775px;
+height: 304px;
+left: 48px;
+top: 481px;
+}
+
+input {
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 743px;
+height: 30px;
+padding: 8px 16px;
+background: rgba(255, 255, 255, 1e-06);
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #212529;
+border: 0;
+box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+border-radius: 4px;
+}
+
+
+/* back and next burron */
+
+.back{
+position: absolute;
+width: 93px;
+height: 53px;
+left: 48px;
+top: 873px;
+border: 1px solid #212529;
+border-radius: 8px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+background: #FFFFFF;    
+}
+
+.back:hover {
+cursor: pointer;
+background: rgba(185, 180, 196, 0.3);
+border: 1px solid rgba(194, 165, 249, 0.8);
+
+    }
+
+.next{
+position: absolute;
+width: 128px;
+height: 53px;
+left: 695px;
+top: 873px;
+background: #212529;
+border-radius: 8px;
+border: 4px solid transparent;
+}
+
+.next:hover {
+cursor: pointer;
+border: 4px solid rgba(194, 165, 249, 0.8)
 }
