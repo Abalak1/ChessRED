@@ -1,7 +1,9 @@
 * {
 margin: 0;
 padding: 0;
+cursor: default;
 }
+
 
 header {
 width: 923px;
@@ -10,7 +12,6 @@ position: absolute;
 background-color: #7025FB;
 left: 0px;
 top: 0px;
-
 }
 
 .left {
@@ -119,10 +120,12 @@ margin-left: 24px;
 text-align: center;
 display: flex;
 align-items: center;
+cursor: pointer;
 }
 
 #arrow {
-    margin-left: 12px;
+margin-left: 12px;
+cursor: pointer;
 }
 
 
@@ -130,12 +133,12 @@ align-items: center;
 
 
 .right-page-two {
-    position: absolute;
-    width: 997px;
-    height: 1080px;
-    background-color: white;
-    left: 923px;
-    }
+position: absolute;
+width: 997px;
+height: 1080px;
+background-color: white;
+left: 923px;
+}
 
 #quote{
 position: absolute;
@@ -410,3 +413,99 @@ border: 4px solid transparent;
 cursor: pointer;
 border: 4px solid rgba(194, 165, 249, 0.8)
 }
+
+
+/* page 2 chess experience */
+
+#quote-page-two{
+position: absolute;
+width: 615px;
+height: 83px;
+left: 117px;
+top: 261px;
+font-family: 'Nunito';
+font-style: italic;
+font-weight: 800;
+font-size: 26px;
+line-height: 45px;
+text-transform: uppercase;
+color: #212529;
+}
+
+#author-page-two{
+position: absolute;
+width: 266px;
+height: 33px;
+left: 466px;
+top: 376px;
+font-family: 'Nunito';
+font-style: italic;
+font-weight: 500;
+font-size: 24px;
+line-height: 33px;
+text-transform: uppercase;
+color: #093F68;
+}
+
+#registration-header-page-two{
+position: absolute;
+width: 383px;
+height: 24px;
+left: 48px;
+top: 30px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 150%;
+text-transform: capitalize;
+color: #212529;
+}
+
+#checked{
+position: absolute;
+top: 13.88px;
+left: 8.91px;
+}
+
+#one-green{
+position: absolute;
+left: 107px;
+top: 144px;
+box-sizing: border-box;
+width: 40px;
+height: 40px;
+background: #E9FAF1;
+border: 0px solid #E5E6E8;
+border-radius: 8px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+/* dropdown */
+
+#level-of-knowladge{
+position: absolute;
+width: 392px;
+height: 46px;
+left: 38px;
+top: 491px;
+background: #FFFFFF;
+border: 0;
+box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+}
+
+#choose-your-character{
+position: absolute;
+width: 392px;
+height: 46px;
+left: 469px;
+top: 491px;
+background: #FFFFFF;
+border: 0;
+box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+border-radius: 4px;
+}
+
