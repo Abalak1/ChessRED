@@ -1,0 +1,101 @@
+.dropdown{
+position: absolute;
+width: 392px;
+height: 46px;
+margin-left: 20px;
+margin-top: 200px;
+box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+border-radius: 4px;
+left: 30px;
+top: 300px;
+}
+
+
+
+.dropdown-menu{
+    width: 392px;
+}
+.btn.active, .btn.show, .btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color: white;
+}
+.btn-check:focus.btn, .btn:focus {
+    border-color: white;
+}
+
+.dropdown-menu {
+    margin-top:  20px !important;
+}
+
+.dropdown-item {
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.dropdown-toggle::after {
+    visibility: hidden;
+} 
+
+.btn{
+    width: 380px;
+    text-align: left;
+}
+
+#xx{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    padding-left: 16px;
+}
+
+#dropdown-two{
+position: absolute;
+margin-left: 440px;
+margin-top: 200px;
+box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+border-radius: 4px;
+left: 30px;
+
+}
+
+#chess-player{
+
+
+}
+
+
+#ex-participant{
+position: absolute;
+left: 53px;
+top: 617px;
+width: 743px;
+height: 30px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 150%;
+color: #212529;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.form-check{
+    position: absolute;
+    width: 58px;
+    height: 24px;
+    left: 976px;
+    top: 675px;
+}
