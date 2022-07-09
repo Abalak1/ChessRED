@@ -73,7 +73,7 @@ form.onsubmit = (e) => {
         }
     });
     if (valid) {
-        location.href = "./registration-experience.html";
+        location.href = "./chessexperience.html";
     }
 };
 
