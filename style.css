@@ -354,7 +354,7 @@ top: 481px;
 
 input {
 display: flex;
-flex-direction: column;
+
 align-items: flex-start;
 width: 743px;
 height: 30px;
@@ -536,3 +536,4 @@ left: 278px;
 top: 416px;
 
 }
+
