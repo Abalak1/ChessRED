@@ -245,7 +245,7 @@ flex-grow: 0;
 }
 
 
-#one {
+.one {
 position: absolute;
 left: 107px;
 top: 144px;
@@ -259,6 +259,11 @@ flex: none;
 order: 0;
 flex-grow: 0;
 }
+
+.one-filled{
+background: #E9FAF1;
+}
+
 
 #inside-one{
 position: absolute;
@@ -348,8 +353,6 @@ top: 481px;
 }
 
 input {
-/* Auto layout */
-
 display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -372,6 +375,10 @@ box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
 border-radius: 4px;
 }
 
+.invalid-input{
+    background: #FFEFEF;
+    color: #DC3545;
+}
 
 /* back and next burron */
 

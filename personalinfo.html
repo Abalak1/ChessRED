@@ -21,7 +21,7 @@
     <div class="right-page-two">
       <h3 id="registration-header">Start creating your account</h3>
       <div id="line"></div>
-      <div id="one">
+      <div class="one">
         <p id="inside-one">1</p>
       </div>
       <div id="line-progress"></div>
@@ -32,48 +32,48 @@
       <p id="chess-experience-progress">Chess experience</p>
       <h1 id="personal-info">Personal information</h1>
       <h3 id="field-description">This is basic informaton fields</h3>
-      <inputgroup id="input-form-personal-info">
-        <input
-          id="name"
-          type="text"
-          name="name"
-          placeholder="Name *"
-          required
-        />
-        <input
-          id="email"
-          type="text"
-          name="email"
-          placeholder="Email address *"
-          required
-        />
-        <input
-          id="phone"
-          type="text"
-          name="phone"
-          placeholder="Phone number *"
-          required
-        />
-        <input
-          id="date"
-          type="text"
-          name="date"
-          placeholder="Date of birth *"
-          required
-        />
-      </inputgroup>
-      <button class="back" onclick="window.location.href='/main.html'">
-        back
-      </button>
-      <button
-        class="next"
-        onclick="window.location.href='/chessexperience.html'"
-      >
-        <div id="button-content">
-          next
-          <img id="arrow" src="/Pictures//arrow-right-circle.svg" alt="" />
-        </div>
-      </button>
+      <form class="form">
+        <inputgroup id="input-form-personal-info">
+          <input
+            class="perosnal-inputs"
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Name *"
+          />
+          <input
+            class="perosnal-inputs"
+            id="email"
+            type="text"
+            name="email"
+            placeholder="Email address *"
+          />
+          <input
+            class="perosnal-inputs"
+            id="phone"
+            type="text"
+            name="phone"
+            placeholder="Phone number *"
+          />
+          <input
+            class="perosnal-inputs"
+            id="date"
+            type="text"
+            name="date"
+            placeholder="Date of birth *"
+          />
+        </inputgroup>
+        <button class="back" onclick="window.location.href='/main.html'">
+          back
+        </button>
+        <button class="next">
+          <div id="button-content">
+            next
+            <img id="arrow" src="/Pictures//arrow-right-circle.svg" alt="" />
+          </div>
+        </button>
+      </form>
     </div>
+    <script src="/personal-info.js"></script>
   </body>
 </html>
