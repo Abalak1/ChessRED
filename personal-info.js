@@ -47,27 +47,27 @@ personalInfoInputs.forEach((input) => {
 form.onsubmit = (e) => {
     e.preventDefault();
     let valid = true;
-    personalInfoInputs.forEach((input) => {
+
+    personalInfoInputs.forEach((input,) => {
         if (input.value.length == 0) {
             input.classList.add("invalid-input");
-            alert("This field is required ", input.name);
+
             valid = false;
         } else if (input.name == "name") {
             if (input.value.length <= 2) {
                 input.classList.add("invalid-input");
-                alert("Name must be more than 2 letters long");
+                // alert("Name must be more than 2 letters long");
                 valid = false;
             }
         } else if (input.name == "email") {
             if (!input.value.endsWith("@redberry.ge")) {
                 input.classList.add("invalid-input");
-                alert("Email must be in redberry mail format @redberry.ge");
                 valid = false;
             }
         } else if (input.name == "phone") {
             if (input.value.length !== 9) {
                 input.classList.add("invalid-input");
-                alert("Number length must be 9");
+                // alert("Number length must be 9");
                 valid = false;
             }
         }
@@ -76,6 +76,7 @@ form.onsubmit = (e) => {
         location.href = "./chessexperience.html";
     }
 };
+
 
 
 backBtn.addEventListener('click', (e) => {

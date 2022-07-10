@@ -537,3 +537,51 @@ top: 416px;
 
 }
 
+.alert-box{
+display: none;
+position: absolute;
+width: 350px;
+height: 87px;
+top: 226px;
+left: 608px;
+background: rgba(255, 255, 255, 0.85);
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
+.alert-what{
+position: absolute;
+left: 10px;
+top: 40px;
+width: 326px;
+height: 24px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #212529;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.alert-logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.alert-info{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #DC3545;
+}
