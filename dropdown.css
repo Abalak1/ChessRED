@@ -1,142 +1,232 @@
-.dropdown{
-position: absolute;
-width: 392px;
-height: 46px;
-margin-left: 20px;
-margin-top: 200px;
-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
-border-radius: 4px;
-left: 30px;
-top: 300px;
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 775px;
+    height: 304px;
+    left: 53px;
+    top: 481px;
 }
 
 
+.experience-form {
+    gap: 88px;  
+}
 
-.dropdown-menu{
+/* Select */
+.select-row {
+    display: flex;
+}
+
+.select-menu.character {
+    margin-left: 23px;
+}
+
+.select-menu{
+    position: relative;
+    z-index: 1;
+}
+.select-menu .select-btn{
     width: 392px;
-}
-.btn.active, .btn.show, .btn:active {
-    color: var(--bs-btn-active-color);
-    background-color: var(--bs-btn-active-bg);
-    border-color: white;
-}
-.btn-check:focus.btn, .btn:focus {
-    border-color: white;
-}
 
-
-.dropdown-menu {
-    margin-top:  20px !important;
-}
-
-.dropdown-item  {
+    background: #FFFFFF;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+    border-radius: 4px;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
-    color: #000000;
-    padding: 7px;
-    cursor: pointer;
+    color: #212529;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    padding: 8px 64px 8px 16px;
 }
 
-.dropdown-toggle::after {
-    visibility: hidden;
+.select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.select-menu .arrow-icon {
+    position: absolute;
+    right: 20px;
+    width: 14px;
+    height: 8px;
+    top: 19px;
+    bottom: 19px;
+    background: url(./Pictures/select-arrow-down.svg);
+}
+
+.select-menu .arrow-icon.up {
+    background: url(./Pictures/select-arrow-up.svg);
+}
+
+.select-menu:hover {
+    cursor: pointer;
 } 
 
-.btn{
-    width: 380px;
-    text-align: left;
+.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
 }
 
-#xx{
+.select-menu .options-wrapper {
+    position: relative;
+}
+
+.select-menu .options{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 392px;
+
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(185, 180, 196, 0.3);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none;
+
+    list-style-type: none;
+    padding-inline-start: 0;
+    padding: 20px 0;
+}
+.select-menu.active .options{
+    display: block;
+}
+.options .option{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
-    padding-left: 16px;
+
+    color: #000000;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-left: 20px;
 }
 
-#dropdown-two{
-position: absolute;
-margin-left: 440px;
-margin-top: 200px;
-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
-border-radius: 4px;
-left: 30px;
-
+.options .option:hover{
+    background: #F7F7F9;
+    font-weight: 600;
+}
+.option i{
+    font-size: 25px;
+    margin-right: 12px;
+}
+.option .option-text{
+    font-size: 18px;
+    color: #333;
+    text-transform: capitalize;
+    line-height: 72px;
 }
 
-#chess-player{
-
-
-}
-
-
-#ex-participant{
-position: absolute;
-left: 53px;
-top: 617px;
-width: 743px;
-height: 30px;
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 150%;
-color: #212529;
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-}
-
-
-#yes{
-position: absolute;
-width: 20px;
-height: 20px;
-left: 2px;
-top: 2px;
-left: 55px;
-top: 675px;
-
-}
-
-#yes-tag{
+.character-img {
     position: absolute;
-    width: 26px;
-    height: 24px;
+    left: 270px;
+    width: 100px;
+    height: 60px;
+    padding-left: 30px;
+}
+
+/* Radio */
+.participation-radio {
+    width: 743px;
+    height: 30px;
+
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 150%;
-    left: 85px;
-    top: 673px;
+    color: #212529;
 
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
-#no{
-position: absolute;
-width: 20px;
-height: 20px;
-left: 129px;
-top: 675px;
-
-}
-
-#no-tag{
+/* Customize the label (the container) */
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 16px;
+  }
+  
+  /* Hide the browser's default radio button */
+  .radio-container input {
     position: absolute;
-    width: 26px;
-    height: 24px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    left: 159px;
-    top: 673px;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    box-sizing: border-box;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  
+  .radio-container input:checked ~ .checkmark {
+    
+    border: 5px solid #0D6EFD;
+    
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .radio-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .participation-radio-row {
+      display: flex;
+  }
+
+  .radio-container:not(:first-child) {
+    margin-left: 18px;
 }
+
+
+
+/* Remove increment arrows for number input */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
