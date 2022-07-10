@@ -58,23 +58,31 @@ form.onsubmit = (e) => {
                 input.classList.add("invalid-input");
                 document.getElementById("xxx-1").style.display = "inline";
                 valid = false;
+            } if (input.value.length <= 2) {
+                document.getElementById("xxx-1").style.display = "none";
             }
         } else if (input.name == "email") {
             if (!input.value.endsWith("@redberry.ge")) {
                 input.classList.add("invalid-input");
                 document.getElementById("xxx").style.display = "inline";
                 valid = false;
+            } if (input.value.endsWith("@redberry.ge")) {
+                document.getElementById("xxx").style.display = "none";
             }
         } else if (input.name == "phone") {
             if (input.value.length !== 9) {
                 input.classList.add("invalid-input");
                 document.getElementById("xxx-2").style.display = "inline";
                 valid = false;
+            } if (input.value.length == 9) {
+                document.getElementById("xxx-2").style.display = "none";
             }
         }
     });
     if (valid) {
         location.href = "./chessexperience.html";
+
+
     }
 };
 
