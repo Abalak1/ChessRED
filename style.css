@@ -537,8 +537,18 @@ top: 416px;
 
 }
 
+#xxx{
+    display: none;
+}
+#xxx-1{
+    display: none;
+}
+#xxx-2{
+    display: none;
+}
+
 .alert-box{
-display: none;
+
 position: absolute;
 width: 350px;
 height: 87px;

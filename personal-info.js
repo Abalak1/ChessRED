@@ -56,18 +56,19 @@ form.onsubmit = (e) => {
         } else if (input.name == "name") {
             if (input.value.length <= 2) {
                 input.classList.add("invalid-input");
-                // alert("Name must be more than 2 letters long");
+                document.getElementById("xxx-1").style.display = "inline";
                 valid = false;
             }
         } else if (input.name == "email") {
             if (!input.value.endsWith("@redberry.ge")) {
                 input.classList.add("invalid-input");
+                document.getElementById("xxx").style.display = "inline";
                 valid = false;
             }
         } else if (input.name == "phone") {
             if (input.value.length !== 9) {
                 input.classList.add("invalid-input");
-                // alert("Number length must be 9");
+                document.getElementById("xxx-2").style.display = "inline";
                 valid = false;
             }
         }
